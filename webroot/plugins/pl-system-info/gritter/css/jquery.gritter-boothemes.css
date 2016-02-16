@@ -1,0 +1,215 @@
+
+/* LAYOUT 
+ ---------------------------------------------------------------------------- */
+
+
+#gritter-notice-wrapper {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 311px;
+  z-index: 999999;
+}
+
+#gritter-notice-wrapper.top-left {
+  left: 20px;
+  right: auto;
+}
+
+#gritter-notice-wrapper.bottom-right {
+  top: auto;
+  left: auto;
+  bottom: 35px;
+  right: 20px;
+}
+
+#gritter-notice-wrapper.bottom-left {
+  top: auto;
+  right: auto;
+  bottom: 35px;
+  left: 20px;
+}
+
+/* THEME DARK - DEFAULT 
+ ---------------------------------------------------------------------------- */
+
+.gritter-item-wrapper {
+  position: relative;
+  margin: 0 0 10px 0;
+  border: 3px solid #111;
+  background-color: #333333;
+  background-color: rgba(0, 0, 0, 0.85);
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px 8px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px 8px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px 8px rgba(0, 0, 0, 0.5);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.gritter-item-wrapper.hover {
+  border-color: #111;
+}
+
+.gritter-item-wrapper a {
+  color: #3399FF;
+}
+
+.gritter-item-wrapper a:hover {
+  color: #99ccff;
+}
+
+.gritter-top {
+  height: 10px;
+}
+
+.hover .gritter-top {
+  background-position: right -30px;
+}
+
+.gritter-bottom {
+  height: 8px;
+  margin: 0;
+}
+
+.hover .gritter-bottom {
+  background-position: bottom right;
+}
+
+.gritter-item {
+  display: block;
+  color: #bbb;
+  padding: 2px 11px 8px 11px;
+  font-size: 13px;
+  line-height: 16px;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4)
+}
+
+.hover .gritter-item {
+  background-position: right -40px;
+}
+
+.gritter-item p {
+  padding: 0;
+  margin: 0;
+  word-wrap: break-word;
+}
+
+.gritter-item strong {
+  color: #f1f1f1;
+}
+
+.gritter-close {
+  display: none;
+  position: absolute;
+  top: 5px;
+  right: 3px;
+  background: url(../images/gritter-close.png) no-repeat left top;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+}
+
+.hover .gritter-close {
+  background: url(../images/gritter-close.png) no-repeat left bottom;
+}
+
+.gritter-title {
+  color: #f1f1f1;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 0 0 7px 0;
+  display: block;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8)
+}
+
+.article .gritter-title {
+  padding: 0 0 4px 0;
+  margin-bottom: 3px;
+  border-bottom: 1px solid #000000;
+  -webkit-box-shadow: 0 1px 1px -1px rgba(255, 255, 255, 0.1);
+  -moz-box-shadow: 0 1px 1px -1px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 1px 1px -1px rgba(255, 255, 255, 0.1);
+}
+
+.gritter-image {
+  width: 48px;
+  height: 48px;
+  float: left;
+  border: 2px solid #222;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.8);
+}
+
+.gritter-with-image,
+.gritter-without-image {
+  padding: 0;
+}
+
+.gritter-with-image {
+  width: 220px;
+  float: right;
+}
+
+/* THEME - LIGHT
+ ---------------------------------------------------------------------------- */
+/* for the light (white) version of the gritter notice */
+
+
+.gritter-light {
+  color: #555555;
+  background-color: #f6f7fe;
+  background-color: rgba(246, 247, 254, 0.85);
+  border-color: #fff;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2), 0 1px 8px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2), 0 1px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2), 0 1px 8px rgba(0, 0, 0, 0.2);
+}
+
+.gritter-light a {
+  color: #0066CC;
+}
+
+.gritter-light a:hover {
+  color: #3399FF;
+}
+
+.gritter-light.hover {
+  border-color: #fff;
+}
+
+.gritter-light .gritter-title {
+  color: #333;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.1)
+}
+
+.gritter-light .gritter-image {
+  border: 2px solid #fff;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+.gritter-light .gritter-item,
+.gritter-light .gritter-bottom,
+.gritter-light .gritter-top,
+.gritter-light .gritter-close {
+  color: #666;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.1)
+}
+
+.gritter-light .gritter-item strong {
+  color: #333;
+}
+
+.gritter-light .gritter-close {
+  background: url(../images/gritter-close.png) no-repeat right top;
+}
+
+.gritter-light.hover .gritter-close {
+  background: url(../images/gritter-close.png) no-repeat right bottom;
+}

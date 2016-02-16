@@ -1,0 +1,82 @@
+/*** -----------------------------------------------------------------------------------------------
+
+	ADMIN TEMPLATE | BOO Admin Template
+	----------------------------------------
+
+	EXTENSION STYLE - External stylesheed
+	
+	filename			:	asset/css/extension.css
+	version				:	16.11.2012
+	copyright			:	(c) 2012 Petr Marasek
+	contact				:	gootoboo@gmail.com
+	
+	-------------------------------------------------------------------------------------------- ***/
+
+/* FONTS */
+/* Picto font & Icon */
+@import "../fonts/fontello/css/fontello.css";
+@import "../fonts/fontello/css/animation.css";
+@import "../fonts/awesome/css/font-awesome.css";
+
+/*@import "icon-fugue.min.css";*/
+
+/* PLUGINS */ 
+@import "../plugins/pl-extension/google-code-prettify/prettify.css";
+
+@import "../plugins/bootstrap-datepicker/css/datepicker-theme.css";
+
+@import "../plugins/bootstrap-colorpicker/css/colorpicker-theme.css";
+@import "../plugins/bootstrap-daterangepicker/css/daterangepicker-theme.css";
+@import "../plugins/bootstrap-timepicker/css/timepicker.css";
+@import "../plugins/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css";
+
+@import "../plugins/bootstrap-fuelux/css/fuelux-bootheme.css";
+@import "../plugins/bootstrap-progressbar/css/bootstrap-progressbar.css";
+@import "../plugins/bootstrap-wysihtml5/src/bootstrap-wysihtml5.css";
+@import "../plugins/bootstrap-fileupload/css/bootstrap-fileupload.css";
+@import "../plugins/bootstrap-modal/css/bootstrap-modal-bootheme.css";
+@import "../plugins/bootstrap-wizard/css/bootstrap-wizard-combi-bootheme.css";
+@import "../plugins/bootstrap-toggle-button/css/bootstrap-toggle-buttons-theme.css";
+@import "../plugins/bootstrap-image-gallery/css/bootstrap-image-gallery-bootheme.css";
+
+@import "../plugins/pl-system-info/qtip2/dist/jquery.qtip.css";
+@import "../plugins/pl-system-info/gritter/css/jquery.gritter-boothemes.css";
+@import "../plugins/pl-system-info/notyfy/themes/boo-notyfylight.css";
+
+@import "../plugins/pl-form/uniform/css/uniform-theme.css";
+@import "../plugins/pl-form/select2/select-theme.css";
+@import "../plugins/pl-form/duallistbox/dualListBox-bootheme.css";
+
+@import "../plugins/pl-file/file-upload/css/jquery.fileupload-ui-bootheme.css";
+
+@import "../plugins/pl-component/fullcalendar/fullcalendar-theme.css";
+@import "../plugins/pl-component/rangeslider/css/rangeboo.css";
+
+@import "../plugins/pl-gallery/wookmark/style-bootheme.css";
+@import "../plugins/pl-gallery/nailthumb/jquery.nailthumb.1.1.css";
+@import "../plugins/pl-gallery/nailthumb/showLoading/css/showLoading.css";
+
+@import "../plugins/pl-visualization/percentageloader/percentageloader.css";
+@import "../plugins/pl-visualization/knob/knob.css";
+
+@font-face {
+        font-family: 'ForteMT';
+        src: url('../fonts/forte/forte.eot');
+        src: url('../fonts/forte/forte.eot?#iefix') format('embedded-opentype'),
+             url('../fonts/forte/forte.woff') format('woff'),
+             url('../fonts/forte/forte.ttf') format('truetype'),
+             url('../fonts/forte/forte.svg#forte') format('svg');
+        font-weight: normal;
+        font-style: normal;
+}
+
+
+.codesOn .i-name {
+  display: none;
+}
+.codesOn .i-code {
+  display: inline;
+}
+.i-code {
+  display: none;
+}

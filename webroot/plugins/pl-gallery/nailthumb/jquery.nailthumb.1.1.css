@@ -1,0 +1,377 @@
+
+/*	jQuery NailThumb Plugin - any image to any thumbnail
+ *  Examples and documentation at: http://www.garralab.com/nailthumb.php
+ *  Copyright (C) 2012  garralab@gmail.com
+ *
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU General Public License as published by
+ *  the Free Software Foundation, either version 3 of the License, or
+ *  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+/**/
+
+
+
+.gallery-nailthumb .thumbnails {
+}
+
+.gall-caption {
+  padding: 10px 0 0;
+}
+
+.gall-legend {
+  font-size: 12px;
+}
+
+.data-icon {
+  color: #999999;
+  cursor: default;
+}
+
+.menu-icon {
+  float: right;
+}
+
+/* GALLERY STYLE 
+ ---------------------------------------------------------------------------- */
+/* GALLERY WELL STYLE
+ ---------------------------------------- */
+.gallery-well {
+  font-size: 13px;
+}
+
+.gallery-well p {
+  line-height: 16px;
+}
+
+.gallery-well .thumbnail {
+  color: #333;
+  background-color: #f6f7fe;
+  border-color: #fff;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.30);
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.30);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.30);
+}
+
+.gallery-small .thumbnail {
+ /* margin: 0 10px 10px 0;*/
+  margin: 5px;
+}
+
+/* GALLERY CONDENSED STYLE
+ ---------------------------------------- */
+.gallery-condensed .thumbnail {
+  border: none;
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.gallery-nailthumb a.thumbnail:hover {
+  border-color: #0088cc;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
+  -moz-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
+  box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
+}
+
+.gallery-nailthumb .thumbnail > img {
+  display: block;
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.gallery-nailthumb .thumbnail .caption {
+  padding: 9px;
+  color: #555555;
+}
+
+/* NAILTHUMB
+ ---------------------------------------------------------------------------- */
+.nailthumb-container {
+  display: block;
+  position: relative;
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-align: left; 
+  /*-webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;*/
+}
+
+.nailthumb-container img.nailthumb-image {
+  margin: 0px;
+  padding: 0px;
+  max-width: none;
+  text-align: left;
+  float: left;
+ /* -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;*/
+}
+
+.nailthumb-container span.nailthumb-title {
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0.6);
+  bottom: 0;
+  color: White;
+  display: block;
+  font-size: 10px;
+  height: 30px;
+  left: 0;
+  margin-top: 2px;
+  padding: 0 9px;
+  line-height: 30px;
+  position: relative;
+  text-align: left;
+  width: 100%;
+  overflow: hidden;
+  float: left;
+}
+
+.nailthumb-container span.nailthumb-title .nailthumb-title-scroller {
+  padding-left: 2px;
+}
+
+.nailthumb-container img {
+  max-width: none;
+  text-align: left;
+}
+
+.thumbnail-action {
+  font-size: 12px
+}
+
+.thumbnail-action:before,
+.thumbnail-action:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.thumbnail-action:after {
+  clear: both;
+}
+
+.imgshare {
+    background-color: #F6F7FE;
+    /*background-color: rgba(246, 247, 254, 0.80);
+    background-color: rgba(0, 0, 0, 0.72);*/
+    padding: 6px 5px;
+    height: 20px;
+    left: 0px;
+    right: 0px;
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    transition: opacity 0.1s linear 0s;
+   /* -webkit-transition: all 0.3s ease-out;
+     -moz-transition: all 0.3s ease-out;
+       -o-transition: all 0.3s ease-out;
+          transition: all 0.3s ease-out;*/
+    visibility: hidden;
+   /* width: 100%;*/
+    z-index: 1;
+}
+
+
+.thumbnail:hover .imgshare {
+    opacity: 1;
+    visibility: visible;
+}
+.imgshare-left {
+    float: left;
+    overflow: hidden;
+}
+.imgshare-right {
+    float: right;
+    overflow: hidden;
+}
+.sale .saleimage {
+    cursor: pointer;
+    position: relative;
+}
+.saleimage img {
+    margin: 0 auto;
+    max-height: 220px;
+    max-width: 160px;
+}
+.salehovertarget {
+    background-color: rgba(255, 0, 0, 0.72);
+    bottom: 0;
+    color: #FFFFFF;
+    font-size: 40px;
+    left: -10000em;
+    line-height: 1;
+    opacity: 0;
+    padding: 7px 0 17px;
+    position: absolute;
+    text-align: center;
+    transition: opacity 0.1s linear 0s;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+.preview-image {
+  margin-bottom: 15px;
+}
+
+
+/* THUMBNAIL SIZE
+ ---------------------------------------- */
+.square75 .gall-caption {
+  width: 75px;
+}
+
+.square100 .gall-caption {
+  width: 100px;
+}
+
+.square150 .gall-caption {
+  width: 150px;
+}
+
+.square200 .gall-caption {
+  width: 200px;
+}
+
+.square260 .gall-caption {
+  width: 260px;
+}
+
+.horizontal75 .gall-caption {
+  width: 75px;
+}
+
+.horizontal100 .gall-caption {
+  width: 100px;
+}
+
+.horizontal200 .gall-caption {
+  width: 200px;
+}
+
+.vertical75 .gall-caption {
+  width: 75px;
+}
+
+.vertical100 .gall-caption {
+  width: 100px;
+}
+
+.vertical200 .gall-caption {
+  width: 200px;
+}
+
+.square75 .nailthumb-container {
+  width: 75px;
+  height: 75px;
+}
+
+.square100 .nailthumb-container {
+  width: 100px;
+  height: 100px;
+}
+
+.square150 .nailthumb-container {
+  width: 150px;
+  height: 150px;
+}
+
+.square200 .nailthumb-container {
+  width: 200px;
+  height: 200px;
+}
+
+.square260 .nailthumb-container {
+  width: 260px;
+  height: 260px;
+}
+
+.horizontal75 .nailthumb-container {
+  width: 75px;
+  height: 47px;
+}
+
+.horizontal100 .nailthumb-container {
+  width: 100px;
+  height: 63px;
+}
+
+.horizontal150 .nailthumb-container {
+  width: 150px;
+  height: 94px;
+}
+
+.horizontal200 .thumbnail-size,
+.horizontal200 .nailthumb-container {
+  width: 200px;
+  height: 125px;
+}
+
+.horizontal260 .thumbnail-size,
+.horizontal260 .nailthumb-container {
+  width: 260px;
+  height: 162px;
+}
+
+.vertical75 .nailthumb-container {
+  width: 75px;
+  height: 120px;
+}
+
+.vertical100 .nailthumb-container {
+  width: 100px;
+  height: 160px;
+}
+
+.vertical150 .nailthumb-container {
+  width: 150px;
+  height: 240px;
+}
+
+.vertical200 .nailthumb-container {
+  width: 200px;
+  height: 320px;
+}
+
+.vertical260 .nailthumb-container {
+  width: 260px;
+  height: 416px;
+}
+
+#loader-page {
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0.6);
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+  display: none;
+  left: 50%;
+  margin: -48px 0 0 -68px;
+  padding: 20px 40px;
+  position: absolute;
+  top: 50%;
+  z-index: 501;
+}
+
+#loader-page img {
+  width: 48px;
+}
+ ​

@@ -1,0 +1,234 @@
+
+.combobox a {
+  font-size: 14px;
+}
+
+.combobox.input-append .btn {
+  -webkit-border-radius: 0 3px 3px 0;
+     -moz-border-radius: 0 3px 3px 0;
+          border-radius: 0 3px 3px 0;
+}
+
+.combobox.input-preppend .btn {
+  -webkit-border-radius: 3px 0 0 3px;
+     -moz-border-radius: 3px 0 0 3px;
+          border-radius: 3px 0 0 3px;
+}
+
+.datagrid thead {
+  background-color: #f9f9f9;
+}
+
+.datagrid thead .datagrid-header-title {
+  float: left;
+  margin-right: 10px;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 28px;
+}
+
+.datagrid thead .datagrid-header-left {
+  float: left;
+}
+
+.datagrid thead .datagrid-header-right {
+  float: right;
+}
+
+.datagrid thead .sorted {
+  color: #333333;
+  text-shadow: 'none';
+  background-color: #f1f1f1;
+  background-image: -moz-linear-gradient(top, #f9f9f9, #e5e5e5);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f9f9f9), to(#e5e5e5));
+  background-image: -webkit-linear-gradient(top, #f9f9f9, #e5e5e5);
+  background-image: -o-linear-gradient(top, #f9f9f9, #e5e5e5);
+  background-image: linear-gradient(to bottom, #f9f9f9, #e5e5e5);
+  background-repeat: repeat-x;
+  border-color: #e5e5e5 #e5e5e5 #bebebe;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#fff9f9f9', endColorstr='#ffe5e5e5', GradientType=0);
+}
+
+.datagrid thead .sorted i {
+  float: right;
+  margin-top: 2px;
+}
+
+.datagrid thead .sortable {
+  cursor: pointer;
+}
+
+.datagrid thead .sortable:hover {
+  color: #333333;
+  text-shadow: 'none';
+  background-color: #f1f1f1;
+  background-image: -moz-linear-gradient(top, #f9f9f9, #e5e5e5);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f9f9f9), to(#e5e5e5));
+  background-image: -webkit-linear-gradient(top, #f9f9f9, #e5e5e5);
+  background-image: -o-linear-gradient(top, #f9f9f9, #e5e5e5);
+  background-image: linear-gradient(to bottom, #f9f9f9, #e5e5e5);
+  background-repeat: repeat-x;
+  border-color: #e5e5e5 #e5e5e5 #bebebe;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#fff9f9f9', endColorstr='#ffe5e5e5', GradientType=0);
+}
+
+.datagrid tfoot {
+  background-color: #f9f9f9;
+}
+
+.datagrid tfoot .datagrid-footer-left {
+  float: left;
+}
+
+.datagrid tfoot .datagrid-footer-left .grid-controls {
+  margin-top: 7px;
+}
+
+.datagrid tfoot .datagrid-footer-left .grid-controls select {
+  width: 60px;
+  margin: 0 5px 1px;
+}
+
+.datagrid tfoot .datagrid-footer-left .grid-controls span {
+  font-weight: normal;
+}
+
+.datagrid tfoot .datagrid-footer-right {
+  float: right;
+}
+
+.datagrid tfoot .datagrid-footer-right .grid-pager > span {
+  position: relative;
+  top: 8px;
+  font-weight: normal;
+}
+
+.datagrid tfoot .datagrid-footer-right .grid-pager .dropdown-menu {
+  min-width: 50px;
+}
+
+.datagrid tfoot .datagrid-footer-right .grid-pager .combobox {
+  position: relative;
+  top: -2px;
+  display: inline-block;
+}
+
+.datagrid tfoot .datagrid-footer-right .grid-pager > button {
+  position: relative;
+  top: 7px;
+}
+
+.pillbox {
+  padding: 3px;
+}
+
+.pillbox ul {
+  display: inline-block;
+  margin: 0;
+}
+
+.pillbox li {
+  display: inline-block;
+  float: left;
+  padding: 1px 4px 2px;
+  margin: 2px;
+  font-size: 11.844px;
+  font-weight: bold;
+  line-height: 21px;
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  vertical-align: baseline;
+  cursor: pointer;
+  background-color: #999999;
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
+}
+
+.pillbox li:after {
+  position: relative;
+  top: -2px;
+  float: right;
+  padding-left: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 20px;
+  color: #000000;
+  text-shadow: 0 1px 0 #ffffff;
+  content: " \00D7";
+  opacity: 0.2;
+  filter: alpha(opacity=20);
+}
+
+.pillbox li:hover:after {
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+}
+
+.pillbox li.status-important {
+  background-color: #b94a48;
+}
+
+.pillbox li.status-warning {
+  background-color: #f89406;
+}
+
+.pillbox li.status-success {
+  background-color: #468847;
+}
+
+.pillbox li.status-info {
+  background-color: #3a87ad;
+}
+
+.spinner input {
+  float: left;
+}
+
+.spinner-small input {
+  width: 45px;
+}
+
+.spinner .btn {
+  position: relative;
+  width: 20px;
+  height: 14px;
+  padding-top: 0;
+  padding-right: 9px;
+  padding-left: 9px;
+}
+
+.spinner .btn.disabled {
+  cursor: not-allowed;
+}
+
+.spinner .spinner-buttons {
+  position: relative;
+  left: -22px;
+  float: left;
+  width: 20px;
+  height: 28px;
+}
+
+.spinner .spinner-up {
+  top: 2px;
+  padding: 0 0 4px 3px;
+}
+
+.spinner .spinner-up i {
+  position: relative;
+  top: -3px;
+}
+
+.spinner .spinner-down {
+  top: 2px;
+  height: 13px;
+  padding: 0 0 4px 3px;
+}
+
+.spinner .spinner-down i {
+  position: relative;
+  top: -3px;
+}

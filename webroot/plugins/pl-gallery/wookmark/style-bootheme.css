@@ -1,0 +1,79 @@
+
+/**
+ * Grid container
+ */
+
+#tiles {
+  list-style-type: none;
+  position: relative; /** Needed to ensure items are laid out relative to this container **/
+  margin: 0;
+}
+
+/**
+ * Grid items
+ */
+
+#tiles li {
+  width: 200px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  display: none; /** Hide items initially to avoid a flicker effect **/
+  cursor: pointer;
+  padding: 4px;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+#tiles li img {
+  display: block;
+}
+
+#tiles li .thumb-title {
+  margin: 5px 0;
+}
+
+#tiles li p {
+  color: #666;
+  font-size: 12px;
+  line-height: 16px;
+  margin: 5px;
+}
+
+#tiles .imgshare {
+  padding-right: 9px;
+  padding-left: 9px;
+}
+
+#tiles .imgshare a {
+  text-decoration: none;
+  opacity: 0.6;
+  filtr: alpha (opacity = 60);  
+}
+
+#tiles .imgshare a:hover {
+  opacity: 0.9;
+  filtr: alpha (opacity = 90);  
+}
+
+#tiles li.inactive {
+  opacity: 0;
+  filtr: alpha (opacity = 0);
+}
+
+/** Loader **/
+
+#loader {
+  height: 16px;
+  text-align: center;
+  padding: 25px 0 25px 0;
+}
+
+#loaderCircle {
+  width: 16px;
+  height: 16px;
+  margin: 0 auto;
+  background-image: url('../images/loader.gif');
+}

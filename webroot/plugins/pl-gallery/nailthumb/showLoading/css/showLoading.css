@@ -1,0 +1,37 @@
+/*
+.loading-indicator {
+  height: 80px;
+  width: 80px;
+  background: url( '../images/loading.gif' );
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.loading-indicator-overlay {
+  background-color: #FFFFFF;
+  opacity: 0.6;
+  filter: alpha(opacity = 60);
+}*/
+
+.loading-indicator {
+ height: 100px;
+  width: 100px;
+  background: url( '../../../../../img/loader/circular_01_20_black.gif' );
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.loading-indicator-overlay {
+  background-color: #000;
+  /*opacity: 0.6;
+  filter: alpha(opacity = 60);*/
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0.6);
+  /*box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+  display: none;
+  left: 50%;
+  position: absolute;
+  top: 50%;*/
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}

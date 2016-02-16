@@ -1,0 +1,120 @@
+.circleStats {
+    position: relative;
+    text-align: center;
+}
+.circleStatsItem {
+    background: none repeat scroll 0 0 rgba(255, 255, 255, 0.7);
+    border-radius: 50em 50em 50em 50em;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.2) inset, 0 0 0 4px rgba(0, 0, 0, 0.1);
+    height: 120px;
+    margin: 10px auto;
+    position: relative;
+    width: 120px;
+}
+.circleStatsItem i {
+    font-size: 30px;
+    margin-top: 0;
+    position: absolute;
+    text-align: center;
+    top: 30%;
+    width: 100%;
+}
+.circleStatsItem.orange, .circleStatsItem.orange i {
+    color: #FA5833;
+}
+.circleStatsItem.lightorange, .circleStatsItem.lightorange i {
+    color: #F4A70C;
+}
+.circleStatsItem.blue, .circleStatsItem.blue i {
+    color: #2FABE9;
+}
+.circleStatsItem.green, .circleStatsItem.green i {
+    color: #B9E672;
+}
+.circleStatsItem.yellow, .circleStatsItem.yellow i {
+    color: #E7E572;
+}
+.circleStatsItem.pink, .circleStatsItem.pink i {
+    color: #E42B75;
+}
+.circleStatsItem input {
+    border: medium none rgba(0, 0, 0, 0.8);
+    box-shadow: none;
+    cursor: default;
+    height: auto;
+    left: 120px;
+    padding: 5px 0 !important;
+    position: absolute;
+    top: 15px;
+}
+.circleStatsItem .plus {
+    font-size: 16px;
+    margin-left: 30px;
+    position: absolute;
+    top: 55%;
+}
+.circleStatsItem .percent {
+    font-size: 14px;
+    margin-left: 78px;
+    position: absolute;
+    top: 57%;
+}
+.circleStatsItem input:focus {
+    box-shadow: none;
+    outline: 0 none;
+}
+.circleStatsItemBox {
+    background: none repeat scroll 0 0 #67C2EF;
+    height: 160px;
+    margin: 10px auto;
+    min-width: 130px;
+    padding-top: 40px;
+    position: relative;
+    width: 100%;
+}
+.circleStatsItemBox .header {
+    background: none repeat scroll 0 0 rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.9);
+    height: 20px;
+    padding: 5px 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.circleStatsItemBox .footer {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.1);
+    bottom: 0;
+    color: rgba(255, 255, 255, 0.9);
+    height: 20px;
+    padding: 5px 0;
+    position: absolute;
+    width: 100%;
+}
+.circleStatsItemBox .footer .count {
+    font-size: 12px;
+}
+.circleStatsItemBox .footer .value {
+    font-weight: bold;
+}
+.circleStatsItemBox .percent {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 12px;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 110px;
+    width: 100%;
+}
+.circleStatsItemBox input {
+    border: medium none rgba(0, 0, 0, 0.8);
+    box-shadow: none;
+    cursor: default;
+    height: auto;
+    padding: 5px 0 !important;
+    position: absolute;
+    top: 30px;
+}
+.circleStatsItemBox input:focus {
+    box-shadow: none;
+    outline: 0 none;
+}
